@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "\"CiNode\"",
   "main": "index.js",
+  
   "scripts": {
-    "test:coverage": "npm test -- --coverage",
+    "test": "npm test -- --coverage"
   },
   "author": "",
   "license": "ISC"
