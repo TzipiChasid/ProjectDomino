@@ -21,10 +21,9 @@ jobs:
     - name: 🔥 Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
-        cache-dependency-path: subdir/package-lock.json
-        node-version: 20
-        # node-version: ${{ matrix.node-version }}
+        node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: './server/package-lock.json'
     - name: 😊 Install Dependencies
       run: npm ci
     - name: 😊 Build Project
