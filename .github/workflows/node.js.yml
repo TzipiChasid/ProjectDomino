@@ -1,22 +1,16 @@
 name: Js Test
-
 on: push
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-        - name: :open_file_folder: Checkout code
+        - name: Checkout code
           uses: actions/checkout@v2
-
-        - name: :hammer_and_wrench: Set up Node.js
+        - name: Set up Node.js
           uses: actions/setup-node@v2
           with:
-            node-version: "20" 
-
-        - name: :arrow_up: Install dependencies
-          run: npm install    
-
-        - name: :test_tube: Run tests with coverage
+            node-version: "20"
+        - name: Install dependencies
+          run: npm install
+        - name: Run tests with coverage
           run: npm test -- --coverage
