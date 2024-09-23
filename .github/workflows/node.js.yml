@@ -23,7 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        working-directory: '../../package.json'
+        working-directory: 'package.json'
     - name: Install Dependencies
       run: npm ci
     - name: 😊 Build Project
