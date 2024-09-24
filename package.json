@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "\"CiNode\"",
   "main": "index.js",
-  
   "scripts": {
-    "test": "npm test -- --coverage"
+    "test": "jest --co"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
