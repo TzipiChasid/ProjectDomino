@@ -1,7 +1,7 @@
 name: Js Test
 on: push
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
         - name: Checkout code
@@ -12,5 +12,5 @@ jobs:
             node-version: "20"
         - name: Install dependencies
           run: npm install
-        - name: Run tests with coverage
+        - name: Run coverage tests 
           run: npx jest --coverage
